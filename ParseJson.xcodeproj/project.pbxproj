@@ -13,6 +13,7 @@
 		F4BCE4A02705F03F00EFD40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BCE49E2705F03F00EFD40B /* Main.storyboard */; };
 		F4BCE4A22705F04000EFD40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BCE4A12705F04000EFD40B /* Assets.xcassets */; };
 		F4BCE4A52705F04000EFD40B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BCE4A32705F04000EFD40B /* LaunchScreen.storyboard */; };
+		F4BCE4B12705F50D00EFD40B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCE4B02705F50D00EFD40B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F4BCE4A12705F04000EFD40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BCE4A42705F04000EFD40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4BCE4A62705F04000EFD40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BCE4B02705F50D00EFD40B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				F4BCE4972705F03F00EFD40B /* ParseJson */,
+				F4BCE4AD2705F09500EFD40B /* Service */,
 				F4BCE4962705F03F00EFD40B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +59,47 @@
 		F4BCE4972705F03F00EFD40B /* ParseJson */ = {
 			isa = PBXGroup;
 			children = (
-				F4BCE4982705F03F00EFD40B /* AppDelegate.swift */,
-				F4BCE49A2705F03F00EFD40B /* SceneDelegate.swift */,
-				F4BCE49C2705F03F00EFD40B /* ViewController.swift */,
-				F4BCE49E2705F03F00EFD40B /* Main.storyboard */,
-				F4BCE4A12705F04000EFD40B /* Assets.xcassets */,
-				F4BCE4A32705F04000EFD40B /* LaunchScreen.storyboard */,
+				F4BCE4AF2705F4EE00EFD40B /* Model */,
+				F4BCE4AE2705F0AA00EFD40B /* VC */,
+				F4BCE4AC2705F07000EFD40B /* Storyboard */,
 				F4BCE4A62705F04000EFD40B /* Info.plist */,
 			);
 			path = ParseJson;
+			sourceTree = "<group>";
+		};
+		F4BCE4AC2705F07000EFD40B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCE4A32705F04000EFD40B /* LaunchScreen.storyboard */,
+				F4BCE4A12705F04000EFD40B /* Assets.xcassets */,
+				F4BCE49E2705F03F00EFD40B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4BCE4AD2705F09500EFD40B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCE4982705F03F00EFD40B /* AppDelegate.swift */,
+				F4BCE49A2705F03F00EFD40B /* SceneDelegate.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F4BCE4AE2705F0AA00EFD40B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCE49C2705F03F00EFD40B /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F4BCE4AF2705F4EE00EFD40B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCE4B02705F50D00EFD40B /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 				F4BCE49D2705F03F00EFD40B /* ViewController.swift in Sources */,
 				F4BCE4992705F03F00EFD40B /* AppDelegate.swift in Sources */,
 				F4BCE49B2705F03F00EFD40B /* SceneDelegate.swift in Sources */,
+				F4BCE4B12705F50D00EFD40B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = S.K.A..ParseJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = S.K.A..ParseJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
